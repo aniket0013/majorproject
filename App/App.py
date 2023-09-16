@@ -8,6 +8,8 @@ import base64, random
 import time,datetime
 import pymysql
 import os
+import nltk
+nltk.download('stopwords')
 import socket
 import platform
 import geocoder
@@ -27,9 +29,6 @@ from streamlit_tags import st_tags
 from PIL import Image
 # pre stored data for prediction purposes
 from Courses import ds_course,web_course,android_course,ios_course,uiux_course,resume_videos,interview_videos
-import nltk
-nltk.download('stopwords')
-
 
 ###### Preprocessing functions ######
 
